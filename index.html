@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool SEB Mới 4lua</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #ff0000;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #cc0000;
+        }
+        #jumpscareVideo {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tool SEB Mới 4lua</h1>
+    <p>Tool SEB mới nhất 4lua - Tăng tốc và tối ưu hóa trải nghiệm của bạn!</p>
+    <button onclick="triggerJumpscare()">Tải Xuống</button>
+    <video id="jumpscareVideo" autoplay>
+        <source src="how2tool.mp4" type="video/mp4">
+        Trình duyệt của bạn không hỗ trợ video.
+    </video>
+
+    <script>
+        function triggerJumpscare() {
+            document.querySelector('h1').style.display = 'none';
+            document.querySelector('p').style.display = 'none';
+            document.querySelector('button').style.display = 'none';
+            const video = document.getElementById('jumpscareVideo');
+            video.style.display = 'block';
+            video.play();
+        }
+    </script>
+</body>
+</html>
